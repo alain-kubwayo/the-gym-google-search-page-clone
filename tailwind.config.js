@@ -26,6 +26,9 @@ module.exports = {
       boxShadow: {
         primary: "0px 1px 3px rgb(192, 185, 185)",
       },
+      fontFamily: {
+        body: "Arial, sans-serif",
+      },
     },
   },
   plugins: [],

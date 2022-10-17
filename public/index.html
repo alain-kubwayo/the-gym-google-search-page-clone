@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="https://www.google.com/favicon.ico">
+</head>
+<body class="h-screen text-sm flex flex-col justify-between">
+    <!-- Header -->
+    <header class="px-[1%] py-[1%] text-sm">
+        <div class="flex justify-end items-center gap-x-4">
+            <ul class="flex gap-x-4 items-center">
+                <li class="hover:underline hover:cursor-pointer">Gmail</li>
+                <li class="hover:underline hover:cursor-pointer">Images</li>
+            </ul>
+            <div class="flex gap-x-4 items-center">
+                <a href="#">
+                    <img class="h-6 w-6" src="./assets/svgs/menu.svg" alt="Menu Icon">
+                </a>
+                <a href="#">
+                    <img class=" h-8 w-8" src="./assets/svgs/user.svg" alt="User Icon">
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main -->
+    <main class="flex flex-col space-y-6 items-center ">
+        <img class="w-[20%]" src="./assets/google-logo.png" alt="Google Logo">
+        <div class="w-[35rem] relative">
+            <img src="./assets/svgs/search.svg" alt="Search Icon" class="h-6 w-6 absolute left-[3%] inset-y-1/4" />
+            <img src="./assets/svgs/audio.svg" alt="Audio Icon" class="h-6 w-6 absolute right-[3%] inset-y-1/4" />
+            <input type="text" class="rounded-full border border-gray-300 outline-none shadow-sm px-[8%] py-3 w-full">
+        </div>
+        <div class="flex gap-x-4">
+            <a class="bg-gray-100 px-6 py-3 shadow-md rounded-lg border border-gray-100 hover:border-gray-300" href="#">Google Search</a>
+            <a class="bg-gray-100 px-6 py-3 shadow-md rounded-lg border border-gray-100 hover:border-gray-300" href="#">I'm Feeling Lucky</a>
+        </div>
+        <div>
+            <p class="text-xs">Google offered in: <a class="text-[#2E23B3] text-sm hover:underline mr-2" href="#">Français</a> <a class="text-[#2E23B3] text-sm hover:underline mr-2" href="#">Kiswahili</a> <a class="text-[#2E23B3] text-sm hover:underline" href="#">Ikinyarwanda</a> </p>
+        </div>
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer -->
+    <footer class="bg-gray-100">
+        <div class="px-[2%] py-[1%] border-b-2 border-gray-300 text-md cursor-auto">
+            Rwanda
+        </div>
+        <div class="px-[2%] py-[1%] flex flex-wrap items-center justify-between">
+            <ul class="flex items-center gap-x-6 flex-wrap">
+                <li class="hover:underline hover:cursor-pointer">About</li>
+                <li class="hover:underline hover:cursor-pointer">Advertising</li>
+                <li class="hover:underline hover:cursor-pointer">Business</li>
+                <li class="hover:underline hover:cursor-pointer">How Search Works</li>
+            </ul>
+            <ul class="flex items-center gap-x-6 flex-wrap">
+                <li class="hover:underline hover:cursor-pointer">Privacy</li>
+                <li class="hover:underline hover:cursor-pointer">Terms</li>
+                <li class="hover:underline hover:cursor-pointer">Settings</li>
+            </ul>
+        </div>
+        
+    </footer>
+    <!-- Footer End -->
+</body>
+</html>

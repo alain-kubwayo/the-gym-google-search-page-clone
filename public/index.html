@@ -1,71 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="icon" href="https://www.google.com/favicon.ico">
-</head>
-<body class="h-screen text-sm flex flex-col justify-between">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="https://www.google.com/favicon.ico" />
+  </head>
+  <body class="flex flex-col justify-between text-sm md:h-screen">
     <!-- Header -->
-    <header class="px-[1%] py-[1%] text-sm">
-        <div class="flex justify-end items-center gap-x-4">
-            <ul class="flex gap-x-4 items-center">
-                <li class="hover:underline hover:cursor-pointer">Gmail</li>
-                <li class="hover:underline hover:cursor-pointer">Images</li>
-            </ul>
-            <div class="flex gap-x-4 items-center">
-                <a href="#">
-                    <img class="h-6 w-6" src="./assets/svgs/menu.svg" alt="Menu Icon">
-                </a>
-                <a href="#">
-                    <img class=" h-8 w-8" src="./assets/svgs/user.svg" alt="User Icon">
-                </a>
-            </div>
+    <header class="text-sm px-3% md:px-1% py-1%">
+      <div class="flex items-center justify-between md:justify-end gap-x-4">
+        <ul class="flex items-center gap-x-4">
+          <li class="flex md:hidden">
+            <img
+              class="w-6 h-6"
+              src="./assets/svgs/hamburger.svg"
+              alt="Hamburger Menu"
+            />
+          </li>
+          <li
+            class="flex py-4 pr-2 font-semibold uppercase border-b-2 text-navLink border-navLink md:hidden hover:cursor-pointer"
+          >
+            all
+          </li>
+          <li class="hidden md:flex hover:underline hover:cursor-pointer">
+            Gmail
+          </li>
+          <li
+            class="flex py-4 pr-2 uppercase md:pr-0 md:lowercase md:py-0 hover:underline hover:cursor-pointer"
+          >
+            Images
+          </li>
+        </ul>
+        <div class="flex items-center gap-x-4">
+          <div
+            class="flex justify-center px-2 py-2 rounded-full hover:bg-gray-200 itens-center"
+          >
+            <a href="#">
+              <img
+                class="w-6 h-6"
+                src="./assets/svgs/menu.svg"
+                alt="Menu Icon"
+              />
+            </a>
+          </div>
+          <div
+            class="flex justify-center px-1 py-1 rounded-full hover:bg-gray-200 itens-center"
+          >
+            <a href="#">
+              <img
+                class="w-8 h-8"
+                src="./assets/svgs/user.svg"
+                alt="User Icon"
+              />
+            </a>
+          </div>
         </div>
+      </div>
     </header>
     <!-- Header End -->
 
     <!-- Main -->
-    <main class="flex flex-col space-y-6 items-center ">
-        <img class="w-[20%]" src="./assets/google-logo.png" alt="Google Logo">
-        <div class="w-[35rem] relative">
-            <img src="./assets/svgs/search.svg" alt="Search Icon" class="h-6 w-6 absolute left-[3%] inset-y-1/4" />
-            <img src="./assets/svgs/audio.svg" alt="Audio Icon" class="h-6 w-6 absolute right-[3%] inset-y-1/4" />
-            <input type="text" class="rounded-full border border-gray-300 outline-none shadow-sm px-[8%] py-3 w-full">
-        </div>
-        <div class="flex gap-x-4">
-            <a class="bg-gray-100 px-6 py-3 shadow-md rounded-lg border border-gray-100 hover:border-gray-300" href="#">Google Search</a>
-            <a class="bg-gray-100 px-6 py-3 shadow-md rounded-lg border border-gray-100 hover:border-gray-300" href="#">I'm Feeling Lucky</a>
-        </div>
-        <div>
-            <p class="text-xs">Google offered in: <a class="text-[#2E23B3] text-sm hover:underline mr-2" href="#">Français</a> <a class="text-[#2E23B3] text-sm hover:underline mr-2" href="#">Kiswahili</a> <a class="text-[#2E23B3] text-sm hover:underline" href="#">Ikinyarwanda</a> </p>
-        </div>
+    <main
+      class="px-3% md:px-0 pt-10 md:pt-0 flex flex-col items-center space-y-6 h-[90vh] md:h-auto"
+    >
+      <img
+        class="w-[40%] md:w-20%"
+        src="./assets/google-logo.png"
+        alt="Google Logo"
+      />
+      <div class="relative w-full md:w-136">
+        <img
+          src="./assets/svgs/search.svg"
+          alt="Search Icon"
+          class="h-6 w-6 absolute left-3% inset-y-1/4"
+        />
+        <img
+          src="./assets/svgs/audio.svg"
+          alt="Audio Icon"
+          class="hidden md:block h-6 w-6 absolute right-3% inset-y-1/4"
+        />
+        <input
+          type="text"
+          class="rounded-full border border-gray-300 outline-none shadow-sm hover:shadow-primary px-8% py-3 w-full"
+        />
+      </div>
+      <div class="hidden md:flex gap-x-4">
+        <a
+          class="px-6 py-3 bg-gray-100 border border-gray-100 rounded-lg shadow-md hover:border-gray-300"
+          href="#"
+          >Google Search</a
+        >
+        <a
+          class="px-6 py-3 bg-gray-100 border border-gray-100 rounded-lg shadow-md hover:border-gray-300"
+          href="#"
+          >I'm Feeling Lucky</a
+        >
+      </div>
+      <div>
+        <p class="text-xs">
+          Google offered in:
+          <a class="mr-2 text-sm text-secondary hover:underline" href="#"
+            >Français</a
+          >
+          <a class="mr-2 text-sm text-secondary hover:underline" href="#"
+            >Kiswahili</a
+          >
+          <a class="text-sm text-secondary hover:underline" href="#"
+            >Ikinyarwanda</a
+          >
+        </p>
+      </div>
     </main>
     <!-- Main End -->
 
+    <div class="flex md:hidden"></div>
+    <div class="flex md:hidden"></div>
+    <div class="flex md:hidden"></div>
+    <div class="flex md:hidden"></div>
+    <div class="flex md:hidden"></div>
+    <div class="flex md:hidden"></div>
+
     <!-- Footer -->
-    <footer class="bg-gray-100">
-        <div class="px-[2%] py-[1%] border-b-2 border-gray-300 text-md cursor-auto">
-            Rwanda
-        </div>
-        <div class="px-[2%] py-[1%] flex flex-wrap items-center justify-between">
-            <ul class="flex items-center gap-x-6 flex-wrap">
-                <li class="hover:underline hover:cursor-pointer">About</li>
-                <li class="hover:underline hover:cursor-pointer">Advertising</li>
-                <li class="hover:underline hover:cursor-pointer">Business</li>
-                <li class="hover:underline hover:cursor-pointer">How Search Works</li>
-            </ul>
-            <ul class="flex items-center gap-x-6 flex-wrap">
-                <li class="hover:underline hover:cursor-pointer">Privacy</li>
-                <li class="hover:underline hover:cursor-pointer">Terms</li>
-                <li class="hover:underline hover:cursor-pointer">Settings</li>
-            </ul>
-        </div>
-        
+    <footer class="md:-mt-0 -mt-[18%] bg-gray-100 text-footerLink">
+      <div
+        class="px-2% py-[4%] md:py-1% border-b-2 border-gray-300 text-md cursor-auto"
+      >
+        Rwanda
+      </div>
+      <div
+        class="block md:hidden px-2% py-[6%] border-b-2 border-gray-300 text-md cursor-auto"
+      ></div>
+      <div
+        class="px-2% py-1% hidden md:flex flex-wrap items-center justify-between"
+      >
+        <ul class="flex flex-wrap items-center gap-x-6">
+          <li class="hover:underline hover:cursor-pointer">About</li>
+          <li class="hover:underline hover:cursor-pointer">Advertising</li>
+          <li class="hover:underline hover:cursor-pointer">Business</li>
+          <li class="hover:underline hover:cursor-pointer">How Search Works</li>
+        </ul>
+        <ul class="flex flex-wrap items-center gap-x-6">
+          <li class="hover:underline hover:cursor-pointer">Privacy</li>
+          <li class="hover:underline hover:cursor-pointer">Terms</li>
+          <li class="hover:underline hover:cursor-pointer">Settings</li>
+        </ul>
+      </div>
+      <ul
+        class="flex md:hidden gap-y-4 bg-gray-100 px-2% pt-4% pb-2% justify-evenly"
+      >
+        <li>Dark theme: off</li>
+        <li>Settings</li>
+        <li>Privacy</li>
+        <li>Terms</li>
+      </ul>
+      <ul
+        class="flex md:hidden bg-gray-100 pt-2% pb-4% justify-evenly px-[10%]"
+      >
+        <li>Advertising</li>
+        <li>Business</li>
+        <li>About</li>
+      </ul>
     </footer>
     <!-- Footer End -->
-</body>
+  </body>
 </html>

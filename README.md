@@ -11,4 +11,4 @@ Responsive Google Search page built with the following:
 
 ## Hosting
 
-Click [here](https://css-combined-exercise-1.web.app/) to view the hosted version
+Click [here](https://css-combined-clone-1.firebaseapp.com/) to view the hosted version

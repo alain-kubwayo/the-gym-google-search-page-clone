@@ -15,7 +15,9 @@ module.exports = {
         "2%": "2%",
         "3%": "3%",
         "4%": "4%",
+        "6%": "6%",
         "8%": "8%",
+        "10%": "10%",
         "20%": "20%",
       },
       spacing: {
@@ -28,6 +30,9 @@ module.exports = {
       },
       fontFamily: {
         body: "Arial, sans-serif",
+      },
+      height: {
+        "main-90vh": "90vh",
       },
     },
   },

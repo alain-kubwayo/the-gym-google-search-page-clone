@@ -904,6 +904,10 @@ video {
   outline-offset: 2px;
 }
 
+.outline {
+  outline-style: solid;
+}
+
 .outline-gray-100 {
   outline-color: #f3f4f6;
 }
@@ -945,6 +949,14 @@ video {
 
 .hover\:outline:hover {
   outline-style: solid;
+}
+
+.hover\:outline-gray-100:hover {
+  outline-color: #f3f4f6;
+}
+
+.hover\:outline-gray-200:hover {
+  outline-color: #e5e7eb;
 }
 
 @media (min-width: 768px) {

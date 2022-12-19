@@ -1,0 +1,23 @@
+{
+  "name": "the-gym-google-search-page-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alain-kubwayo/the-gym-google-search-page-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alain-kubwayo/the-gym-google-search-page-clone/issues"
+  },
+  "homepage": "https://github.com/alain-kubwayo/the-gym-google-search-page-clone#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
